@@ -168,7 +168,7 @@ def process_ticket():
     combined.drop('Ticket_XXX', inplace=True, axis=1)
     return combined
 
-if __init__=='__main__':
+if __name__=='__main__':
 
     combined['Child']=combined['Age'].apply(mfchild)
     combined['Alone']=combined[['SibSp','Parch']].apply(Alone,axis=1)
